@@ -1,0 +1,36 @@
+{
+    "name": "Blockmatic Real-Estate NFT Collection NFT #1",
+    "description": "This is Blockmatic's first NFT Collection. These Real Estate NFTs are a unique collection. This is 1 of 1000 Real Estate NFTs available",
+    "image": "ipfs://QmetESUb7wTPr8mBHWFsiSKMw6HTLWUGoL8DrkcaY9TTyh/1.png",
+    "edition": 1,
+    "attributes": [
+      {
+        "trait_type": "State",
+        "value": "New York"
+      },
+      {
+        "trait_type": "Population",
+        "value": "8405837"
+      },
+      {
+        "trait_type": "Rank",
+        "value": "1"
+      },
+      {
+        "trait_type": "Growth_From_2012_to_2022",
+        "value": "4.8%"
+      },
+      {
+        "trait_type": "Latitude",
+        "value": "40.7127837"
+      },
+      {
+        "trait_type": "Longitude",
+        "value": "-74.0059413"
+      },
+      {
+        "trait_type": "Beds • Bath • Sq-Ft ",
+        "value": "Beds: 4 • Bath: 2 • Sq-Ft: 2,500"
+      }
+    ]
+  }

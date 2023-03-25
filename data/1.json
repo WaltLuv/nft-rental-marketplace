@@ -1,0 +1,40 @@
+{
+    "name": "Luxury NYC Penthouse",
+    "address": "157 W 57th St APT 49B, New York, NY 10019",
+    "description": "Luxury Penthouse located in the heart of NYC",
+    "descriptionTwo": "Wifi • Kitchen • Living Area",
+    "lat": "40.716862",
+    "long": "-73.999005",
+    "image": "https://blocklock22.infura-ipfs.io/ipfs/QmXYPWfnwv3hfwytmm6pd1ysDSFrJpumiBbaVu8S8xEepH/exterior_1.jpeg",
+    "inspection": "https://blocklock22.infura-ipfs.io/ipfs/QmcGi7bQA5BBhgh9ykxrnLkxiwp8L1GAXBfj8LXpxMc8KE",
+    "appraisal": "https://blocklock22.infura-ipfs.io/ipfs/QmSJt3jjaDV9XAZ5vo7my2JNgvHd539VNjgH1Wf4bQu3nk",
+    "id": "1",
+    "attributes": [
+        {
+            "trait_type": "Purchase Price",
+            "value": 20
+        },
+        {
+            "trait_type": "Type of Residence",
+            "value": "Condo"
+        },
+        {
+            "trait_type": "Bed Rooms",
+            "value": 3
+        },
+        {
+            "trait_type": "Bathrooms",
+            "value": 2
+        },
+        {
+            "trait_type": "Square Feet",
+            "value": 2200
+        },
+        {
+            "trait_type": "Year Built",
+            "value": 2013
+        }
+       
+       
+    ]
+}

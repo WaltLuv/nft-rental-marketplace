@@ -1,0 +1,38 @@
+{
+    "name": "WA Nature Home",
+    "address": "183 Woodland Drive, Camano Island, WA 98282",
+    "description": "Comfy island home on Camano Island",
+    "descriptionTwo": "Wifi • Kitchen • Living Area",
+    "lat": "48.229100",
+    "long": "-122.471970",
+    "image": "https://blocklock22.infura-ipfs.io/ipfs/QmXYPWfnwv3hfwytmm6pd1ysDSFrJpumiBbaVu8S8xEepH/exterior_3.jpeg",
+    "inspection": "https://blocklock22.infura-ipfs.io/ipfs/QmcGi7bQA5BBhgh9ykxrnLkxiwp8L1GAXBfj8LXpxMc8KE",
+    "appraisal": "https://blocklock22.infura-ipfs.io/ipfs/QmSJt3jjaDV9XAZ5vo7my2JNgvHd539VNjgH1Wf4bQu3nk",
+    "id": "3",
+    "attributes": [
+        {
+            "trait_type": "Purchase Price",
+            "value": 10
+        },
+        {
+            "trait_type": "Type of Residence",
+            "value": "Single family residence"
+        },
+        {
+            "trait_type": "Bed Rooms",
+            "value": 3
+        },
+        {
+            "trait_type": "Bathrooms",
+            "value": 1.5
+        },
+        {
+            "trait_type": "Square Feet",
+            "value": 2202
+        },
+        {
+            "trait_type": "Year Built",
+            "value": 2020
+        }
+    ]
+}

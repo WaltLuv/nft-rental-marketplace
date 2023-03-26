@@ -15,13 +15,14 @@ $primary-color: #000;
 $secondary-color: #8F00FF;
 
 html {
-  font-size: 10px;
+  font-size: 10px; /* Set base font size to 10px */
   font-family: sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 #root {
@@ -32,14 +33,16 @@ html {
 #layout {
   @include max-size;
   display: flex;
-  $menu-width: 20%;
+  flex-wrap: wrap; /* Allow items to wrap to new line on smaller screens */
+  $menu-width: 20%; /* Set menu width in rem */
   background-color: #000;
   color: white;
+ 
 
   .menu-container {
-    width: $menu-width;
-    min-width: 26rem;
-    height: 100%;
+    width: 100%; /* Set width to 100% on small screens */
+    max-width: $menu-width;
+    height: 10rem; /* Set height to fixed value on small screens */
     color: white;
 
     .logo-container {
@@ -64,7 +67,7 @@ html {
 
           &:hover {
             border: 2px solid $secondary-color;
-            color: #00FFFF
+            color: #00FFFF;
           }
         }
       }
@@ -275,3 +278,157 @@ html {
     }
   }
 }
+
+.name-desc-container {
+  order: -1;
+  font-family: $primary-font;
+
+  .toggle {
+    text-decoration: underline;
+    text-decoration-color: $truffle-teal;
+    text-decoration-thickness: 0.15rem;
+    cursor: pointer;
+  }
+}
+
+.table-container {
+  width: 100%;
+
+  table {
+    width: 100%;
+    border: 1px solid #fff;
+
+    tbody {
+      tr {
+        td {
+          font-family: $primary-font;
+        }
+
+        &:nth-child(even) {
+          background-color: #eee;
+        }
+      }
+    }
+  }
+}
+
+.price-container {
+  @include flex-center;
+
+  h2 {
+    font-size: 1rem;
+    font-family: $primary-font;
+  }
+}
+
+.rent-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #8F00FF;
+  color: $primary-color
+
+  h3,
+  button {
+    font-family: $primary-font;
+    background-color: $truffle-teal;
+    color: $primary-color;
+  }
+
+  button {
+    align-self: center;
+    background-color: $truffle-teal;
+    color: $primary-color;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 15rem;
+  }
+
+  input {
+    background-color: $truffle-teal;
+    color: $primary-color;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+  }
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+
+  .form {
+    display: flex;
+
+    input {
+      width: 100%;
+      font-family: $primary-font;
+    }
+
+    select {
+      min-width: 8rem;
+      font-family: $primary-font;
+    }
+  }
+
+  button {
+    align-self: center;
+    font-family: $primary-font;
+    margin-top: 0.5rem;
+  }
+}
+
+.unlist-container {
+  @include flex-center;
+  flex-direction: column;
+
+  h3,
+  button {
+    font-family: $primary-font;
+  }
+
+  button {
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* adjust styles for screens smaller than 768px */
+  .table-container {
+    overflow-x: scroll;
+  }
+  
+  .rent-container {
+    padding: 1rem;
+    
+    input {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+  }
+  
+  .list-container {
+    padding: 1rem;
+    
+    .form {
+      flex-wrap: wrap;
+      
+      input {
+        width: 100%;
+        margin-top: 0.5rem;
+      }
+      
+      select {
+        width: 100%;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+  
+  .unlist-container {
+    padding: 1rem;
+  }
+}
+
+
+
